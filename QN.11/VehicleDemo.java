@@ -1,4 +1,3 @@
-// Superclass Vehicle
 class Vehicle {
     void display() {
         System.out.println("This is a vehicle.");
@@ -13,7 +12,6 @@ class Car extends Vehicle {
     }
 }
 
-// Main class to test
 public class VehicleDemo {
     public static void main(String[] args) {
         Car myCar = new Car();

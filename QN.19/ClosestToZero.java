@@ -13,15 +13,15 @@ class ClosestToZero {
                 num2 = arr[right];
             }
 
-            if (sum < 0) left++;  // Move right if sum is negative
-            else right--;         // Move left if sum is positive
+            if (sum < 0) left++;  
+            else right--;         
         }
 
         System.out.println("Numbers closest to zero sum: " + num1 + " and " + num2);
     }
 
     public static void main(String[] args) {
-        int arr[] = {-10, -3, 2, 4, 7, 11}; // Example sorted array
+        int arr[] = {-10, -3, 2, 4, 7, 11}; 
         findClosestSum(arr);
     }
 }

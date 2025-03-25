@@ -1,4 +1,3 @@
-// Superclass Vehicle
 class Vehicle {
     void start() {
         System.out.println("Vehicle is starting...");
@@ -12,8 +11,6 @@ class Car extends Vehicle {
         System.out.println("Car engine is now ON! 🚗💨");
     }
 }
-
-// Main class to demonstrate method overriding
 public class CarDemo {
     public static void main(String[] args) {
         Car myCar = new Car();

@@ -11,7 +11,6 @@ class BankAccount {
         this.balance = balance;
     }
 
-    // Method to deposit money
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -21,7 +20,6 @@ class BankAccount {
         }
     }
 
-    // Method to withdraw money
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -31,7 +29,6 @@ class BankAccount {
         }
     }
 
-    // Method to display balance
     public void displayBalance() {
         System.out.println("Current Balance: " + balance);
     }
@@ -47,7 +44,6 @@ class BankAccount {
         System.out.println("\nAccount 2 (Parameterized Constructor):");
         acc2.displayBalance();
 
-        // Performing transactions
         acc2.deposit(2000);
         acc2.withdraw(1000);
         acc2.displayBalance();

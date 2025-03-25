@@ -1,15 +1,12 @@
 import java.util.Arrays;
 
-// Base class Shape
 abstract class Shape {
-    abstract double area(); // Abstract method to be overridden
+    abstract double area(); 
 }
 
-// Circle class inheriting Shape
 class Circle extends Shape {
     double radius;
 
-    // Default Constructor
     Circle() {
         this.radius = 1.0;
     }
@@ -49,7 +46,6 @@ class Square extends Shape {
 class ShapeManager {
     Shape[] shapes; // Array to store multiple shapes
 
-    // Constructor to initialize with shapes
     ShapeManager(Shape[] shapes) {
         this.shapes = shapes;
     }
@@ -79,7 +75,6 @@ class ShapeManager {
 // Main Class
 public class Shape_Inheritance {
     public static void main(String[] args) {
-        // Creating shapes
         Shape[] shapes = {
             new Circle(5),
             new Square(4),
@@ -87,7 +82,6 @@ public class Shape_Inheritance {
             new Square(7)
         };
 
-        // Managing Shapes
         ShapeManager manager = new ShapeManager(shapes);
         manager.findLargestShape();
         manager.sortShapes();
